@@ -1,3 +1,6 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+#modifier_classe:
+ # path: /classe/{id}/modifier
+  #controller: App\Controller\ClasseController::modifierClasse

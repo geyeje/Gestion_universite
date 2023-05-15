@@ -1,0 +1,24 @@
+<div class="position-fixed top-50 start-50 translate-middle" style="z-index: 11;">
+    <div class="card  w-100 mx-auto bg-primary" style="max-width: 18rem">
+        <div class="card-body text-black">
+            {{ form_start(form) }}
+            <div class="mb-3">
+                <label for="{{ form.nom.vars.id }}" class="form-label">Nom</label>
+                {{ form_widget(form.nom, {'attr': {'class': 'form-control', 'placeholder': 'Nom'}}) }}
+                {{ form_errors(form.nom, {'attr': {'class': 'invalid-feedback'}}) }}
+            </div>
+            <div class="mb-3">
+                <label for="{{ form.prenom.vars.id }}" class="form-label">Prénom</label>
+                {{ form_widget(form.prenom, {'attr': {'class': 'form-control', 'placeholder': 'Prénom'}}) }}
+                {{ form_errors(form.prenom, {'attr': {'class': 'invalid-feedback'}}) }}
+            </div>
+            <div class="mb-3">
+                <label for="{{ form.matiere.vars.id }}" class="form-label">Matière</label>
+                {{ form_widget(form.matiere, {'attr': {'class': 'form-control', 'placeholder': 'Matière'}}) }}
+                {{ form_errors(form.matiere, {'attr': {'class': 'invalid-feedback'}}) }}
+            </div>
+            <button class="btn btn-success">{{ button_label|default('Save') }}</button>
+            {{ form_end(form) }}
+        </div>
+    </div>
+</div>

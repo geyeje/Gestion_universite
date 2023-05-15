@@ -1,0 +1,14 @@
+<h1>Résultat de la modification </h1>
+<p>classe:{{ classe.getlisteEtudiants() }}</p>
+<p>Matiere: {{ classe.getMatiere() }}</p>
+
+<h2>Listes des etudiants</h2>
+{% if etudiants is empty  %}
+    <p> aucune etudiants inscrit a cette classe</p>
+{% else %}
+    <ul>
+        {% for etudiant in etudiants %}
+        <li>{{ etudiant.getNom() }}{{ etudiant.getPrenom() }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}

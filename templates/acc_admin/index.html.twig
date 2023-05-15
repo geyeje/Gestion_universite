@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AccAdminController!{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <a href="{{ path('app_etudiant_index') }}" class="btn btn-primary btn-lg btn-block">Étudiants</a>
+            </div>
+            <div class="col-md-6">
+                <a href="{{ path('app_profs_index') }}" class="btn btn-secondary btn-lg btn-block">Profs</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
